@@ -103,13 +103,13 @@ write-output("sum = $a")        # сумма - окончательный отв
 ### 20. Напишите функцию для предыдущего задания. Запустите её на выполнение.
 function sum ([int]$n)
 {
-    [int]$a = 0
-    for($i = 1; $i -le $n; $i++)
-    {
-       $a += $i * 3
-       write-output("step: $a")
-    }
-    write-output("sum: $a")
+   [int]$a = 0
+   for($i = 1; $i -le $n; $i++)
+   {
+      $a += $i * 3
+      write-output("step: $a")
+   }
+   write-output("sum: $a")
 }
 
 sum (read-host "input n: ")
